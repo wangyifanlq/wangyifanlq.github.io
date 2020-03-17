@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | 阿菠萝 | A PINEAPPLE</title>
+<title>题解 P1996 【约瑟夫问题】 | 阿菠萝 | A PINEAPPLE</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,23 @@
 <link rel="stylesheet" href="https://wangyifanlq.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="阿菠萝工作室 | A PINEAPPLE STUDIO">
+    <meta name="description" content="这道题虽说普及-，但还算比较简单的。解法有很多，希望不要重复。
+我用的是直接模拟游戏过程的算法，下面直接贴代码。
+#include &lt;iostream&gt;//cin cout不说了
+#include &lt;cstring&gt;..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,30 +98,53 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">题解 P1996 【约瑟夫问题】</h2>
+            <div class="post-date">2020-03-17</div>
+            
+            <div class="post-content" v-pre>
+              <p>这道题虽说普及-，但还算比较简单的。解法有很多，<s>希望不要重复</s>。</p>
+<p>我用的是直接模拟游戏过程的算法，下面直接贴代码。</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;//cin cout不说了
+#include &lt;cstring&gt;//memset要用cstring库。
+bool a[110];//用来记录该player是否在圈内，ture为在圈内，false为出圈。
+int m,n,x=0,y=0,z=0;//x为报到第x个数，y为到第y人，z为已经z人出圈。 
+using namespace std;
+int main()
+{
+    memset(a,true,sizeof(a));//把a初始化为true，以前学pas的不要把ture和sizeof位置搞错
+    cin&gt;&gt;n&gt;&gt;m;//读入
+    while(z!=n)//当还有人未出圈时
+    {
+        y++;//人+1
+        if (y==n+1) y=1;//当人数到n+1时，因为是环型，所以重新回到1.
+        if (a[y]) x++;//如果这个人还在圈里就报数。
+        if (x==m)//当之个人很倒霉，报到那个数字时
+        {
+            x=0;//把报到的数字归0。
+            cout&lt;&lt;y&lt;&lt;' ';//把这个人的序号输出
+            a[y]=false;//这个人出圈了
+            z++;//多一个出圈的人
+        }
+    }
+    return 0;
+}
+</code></pre>
+<h2 id="简不简单">简不简单？？？</h2>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
+            
+
+            
               
-                
-                  <article class="post">
-                    <a href="https://wangyifanlq.github.io/post/ti-jie-p1996-yue-se-fu-wen-ti/">
-                      <h2 class="post-title">
-                        题解 P1996 【约瑟夫问题】
-                      </h2>
-                    </a>
-                  </article>
-                
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
               
             
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
@@ -132,6 +165,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
