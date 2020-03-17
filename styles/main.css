@@ -1953,11 +1953,15 @@ body {
     .next-md-body a:hover, .friends-box a:hover {
       color: #222;
       border-bottom-color: #222;
-    }
-      .nav-item a {
-        color:  #555;
+    }.nav-item a {
+        color: #555;
+      }
+      .nav-item-active a {
+        color: #555;
+        border-bottom: 1px solid #555 !important;
       }.nav-item a:hover {
         color: #222;
+        border-bottom: 1px solid #222 !important;
       }.nav-item-active {
       background: #f9f9f9;
     }
@@ -2000,19 +2004,19 @@ body {
       border-bottom-color: #fc6423;
     }
       .site-meta {
-        background: #000 !important;
+        background: #212529 !important;
       }
       .head-top-line {
-        background: #000 !important;
+        background: #212529 !important;
       }
     .brand {
-      background: #000;
+      background: #212529;
     }
     .main-title {
-      color: #212529;
+      color: #f8f9fa;
     }
     .mist .site-title i {
-      background: #212529;
+      background: #f8f9fa;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }
