@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wangyifanlq.github.io</id>
+    <title>阿菠萝_apineapple | Fantastic</title>
+    <updated>2020-03-17T05:57:56.409Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://wangyifanlq.github.io"/>
+    <link rel="self" href="https://wangyifanlq.github.io/atom.xml"/>
+    <subtitle>阿菠萝工作室 | A PINEAPPLE STUDIO</subtitle>
+    <logo>https://wangyifanlq.github.io/images/avatar.png</logo>
+    <icon>https://wangyifanlq.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 阿菠萝_apineapple | Fantastic</rights>
+</feed>
