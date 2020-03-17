@@ -1915,19 +1915,19 @@ body {
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
       background: #eee;
     }h1, h2, h3, h4, h5, h6 {
-      color: #555;
+      color: #868e96;
     }
     
     .archive-timeline-title::before {
-      background-color: #555;
+      background-color: #868e96;
     }
     
     .post-title-link::before {
-      background-color: #555;
+      background-color: #868e96;
     }
     
     .node-title::before {
-      background-color: #555;
+      background-color: #868e96;
     }.bg-color {
       background-color: #fff;
     }a {
