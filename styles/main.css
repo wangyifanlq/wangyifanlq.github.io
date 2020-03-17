@@ -2009,10 +2009,12 @@ body {
       background: #212529;
     }
     .main-title {
-      color: #f8f9fa;
+      color: #212529;
     }
     .mist .site-title i {
-      background: #f8f9fa;
+      background: #212529;
+    }.box-scale > #landlord {
+      transform: scale([0,1]);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }
