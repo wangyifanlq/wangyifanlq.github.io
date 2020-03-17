@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://wangyifanlq.github.io</id>
     <title>阿菠萝 | A PINEAPPLE</title>
-    <updated>2020-03-17T07:11:41.301Z</updated>
+    <updated>2020-03-17T07:20:14.714Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://wangyifanlq.github.io"/>
     <link rel="self" href="http://wangyifanlq.github.io/atom.xml"/>
@@ -11,15 +11,15 @@
     <icon>http://wangyifanlq.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 阿菠萝 | A PINEAPPLE</rights>
     <entry>
-        <title type="html"><![CDATA[题解 P1996 【约瑟夫问题】]]></title>
-        <id>http://wangyifanlq.github.io/post/ti-jie-p1996-yue-se-fu-wen-ti/</id>
-        <link href="http://wangyifanlq.github.io/post/ti-jie-p1996-yue-se-fu-wen-ti/">
+        <title type="html"><![CDATA[[TOP]题解 P1996 【约瑟夫问题】]]></title>
+        <id>http://wangyifanlq.github.io/post/solution-p1996/</id>
+        <link href="http://wangyifanlq.github.io/post/solution-p1996/">
         </link>
         <updated>2020-03-17T06:11:03.000Z</updated>
         <content type="html"><![CDATA[<p>这道题虽说普及-，但还算比较简单的。解法有很多，<s>希望不要重复</s>。</p>
 <p>我用的是直接模拟游戏过程的算法，下面直接贴代码。</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;//cin cout不说了
-#include &lt;cstring&gt;//memset要用cstring库。
+<pre><code class="language-cpp">#include &lt;iostream&gt; //cin cout不说了
+#include &lt;cstring&gt; //memset要用cstring库。
 bool a[110];//用来记录该player是否在圈内，ture为在圈内，false为出圈。
 int m,n,x=0,y=0,z=0;//x为报到第x个数，y为到第y人，z为已经z人出圈。 
 using namespace std;
@@ -43,7 +43,9 @@ int main()
     return 0;
 }
 </code></pre>
-<h2 id="简不简单">简不简单？？？</h2>
+<p><strong>简不简单？？？</strong></p>
+<hr>
+<p>原文可见<a href="https://www.luogu.com.cn/blog/aboluo/solution-p1996">我的洛谷博客</a>。</p>
 ]]></content>
     </entry>
 </feed>
