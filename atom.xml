@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://wangyifanlq.github.io</id>
-    <title>阿菠萝 | A PINEAPPLE</title>
-    <updated>2020-07-10T07:43:01.674Z</updated>
+    <title>沉MO_Official</title>
+    <updated>2020-08-28T01:51:03.145Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://wangyifanlq.github.io"/>
     <link rel="self" href="http://wangyifanlq.github.io/atom.xml"/>
-    <subtitle>世界灿烂盛大，欢迎回家。</subtitle>
+    <subtitle>センモ没有ちゃん。鸽子不是王。</subtitle>
     <logo>http://wangyifanlq.github.io/images/avatar.png</logo>
     <icon>http://wangyifanlq.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 阿菠萝 | A PINEAPPLE</rights>
+    <rights>All rights reserved 2020, 沉MO_Official</rights>
     <entry>
         <title type="html"><![CDATA[[TOP]题解 P1996 【约瑟夫问题】]]></title>
-        <id>http://wangyifanlq.github.io/post/solution-p1996/</id>
-        <link href="http://wangyifanlq.github.io/post/solution-p1996/">
+        <id>http://wangyifanlq.github.io/solution-p1996/</id>
+        <link href="http://wangyifanlq.github.io/solution-p1996/">
         </link>
         <updated>2020-03-17T06:11:03.000Z</updated>
         <content type="html"><![CDATA[<p>这道题虽说普及-，但还算比较简单的。解法有很多，<s>希望不要重复</s>。</p>
